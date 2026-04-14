@@ -27,8 +27,8 @@ const destinations = [
         description: 'Sự kết hợp hoàn hảo giữa truyền thống lâu đời và công nghệ hiện đại. Từ những ngôi đền cổ kính ở Kyoto đến nhịp sống hối hả ở Tokyo, Nhật Bản mang đến cho du khách những trải nghiệm đa dạng và sâu sắc.',
         // CẬP NHẬT ĐƯỜNG DẪN ẢNH THỰC TẾ
         images: [
-            'https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=600&auto=format&fit=crop', // Ảnh 1 (Núi Phú Sĩ)
-            'https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?q=80&w=600&auto=format&fit=crop'  // Ảnh 2 (Một góc phố Kyoto)
+            'https://aloha.edu.vn/wp-content/uploads/2023/10/co-cau-nen-kinh-te-nhat-ban-3.jpg', // Ảnh 1 (Núi Phú Sĩ)
+            'https://ik.imagekit.io/tvlk/blog/2023/03/van-hoa-nhat-ban-5.jpg?tr=dpr-2,w-675'  // Ảnh 2 (Một góc phố Kyoto)
         ]
     }
 ];
