@@ -1,21 +1,21 @@
 const destinations = [
     {
         type: 'beach',
-        name: 'Bãi biển Bora Bora',
+        name: 'Bãi biển Nha Trang',
         description: 'Làn nước trong xanh và những khu nghỉ dưỡng trên mặt nước sang trọng.',
-        images: ['https://example.com/beach1.jpg', 'https://example.com/beach2.jpg']
+        images: ['https://media.dulich24.com.vn/diemden/bai-bien-nha-trang-5768/bai-bien-nha-trang.jpg', 'https://ik.imagekit.io/tvlk/blog/2022/06/bai-tam-dep-o-nha-trang-10.jpeg?tr=dpr-2,w-675']
     },
     {
         type: 'temple',
         name: 'Đền Angkor Wat',
         description: 'Quần thể di tích đền đài lớn nhất thế giới tại Campuchia.',
-        images: ['https://example.com/temple1.jpg', 'https://example.com/temple2.jpg']
+        images: ['https://tse2.mm.bing.net/th/id/OIP.JOBMGG1ttJa7qemqEn9rzQHaE7?pid=Api&h=220&P=0', 'https://sophiessuitcase.com/wp-content/uploads/2019/11/angkor-wat-sophies-suitcase.jpg']
     },
     {
         type: 'country',
         name: 'Nhật Bản',
         description: 'Sự kết hợp hoàn hảo giữa truyền thống và công nghệ hiện đại.',
-        images: ['https://example.com/japan1.jpg', 'https://example.com/japan2.jpg']
+        images: ['https://aloha.edu.vn/wp-content/uploads/2023/10/co-cau-nen-kinh-te-nhat-ban-3.jpg', 'https://ik.imagekit.io/tvlk/blog/2023/03/van-hoa-nhat-ban-5.jpg?tr=dpr-2,w-675']
     }
 ];
 
