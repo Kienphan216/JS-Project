@@ -1,24 +1,39 @@
+// Cập nhật tệp script.js
+
 const destinations = [
     {
         type: 'beach',
-        name: 'Bãi biển Nha Trang',
-        description: 'Làn nước trong xanh và những khu nghỉ dưỡng trên mặt nước sang trọng.',
-        images: ['https://media.dulich24.com.vn/diemden/bai-bien-nha-trang-5768/bai-bien-nha-trang.jpg', 'https://ik.imagekit.io/tvlk/blog/2022/06/bai-tam-dep-o-nha-trang-10.jpeg?tr=dpr-2,w-675']
+        name: 'Bãi biển Bora Bora (Polynesia thuộc Pháp)',
+        description: 'Được mệnh danh là "Hòn đảo ngọc", Bora Bora nổi tiếng với làn nước trong xanh như ngọc bích, những rạn san hô rực rỡ và các khu nghỉ dưỡng trên mặt nước sang trọng bậc nhất thế giới.',
+        // CẬP NHẬT ĐƯỜNG DẪN ẢNH THỰC TẾ
+        images: [
+            'https://images.unsplash.com/photo-1531110036690-349079f220f1?q=80&w=600&auto=format&fit=crop', // Ảnh 1 (Toàn cảnh bãi biển)
+            'https://images.unsplash.com/photo-1533220473952-19e917d84871?q=80&w=600&auto=format&fit=crop'  // Ảnh 2 (Khu nghỉ dưỡng)
+        ]
     },
     {
         type: 'temple',
-        name: 'Đền Angkor Wat',
-        description: 'Quần thể di tích đền đài lớn nhất thế giới tại Campuchia.',
-        images: ['https://tse2.mm.bing.net/th/id/OIP.JOBMGG1ttJa7qemqEn9rzQHaE7?pid=Api&h=220&P=0', 'https://sophiessuitcase.com/wp-content/uploads/2019/11/angkor-wat-sophies-suitcase.jpg']
+        name: 'Đền Angkor Wat (Campuchia)',
+        description: 'Quần thể di tích đền đài lớn nhất thế giới, biểu tượng của nền văn minh Khmer. Angkor Wat không chỉ là một kiệt tác kiến trúc mà còn là một trung tâm tôn giáo quan trọng, thể hiện sự giao thoa giữa Ấn Độ giáo và Phật giáo.',
+        // CẬP NHẬT ĐƯỜNG DẪN ẢNH THỰC TẾ
+        images: [
+            'https://images.unsplash.com/photo-1596401057633-531031c36087?q=80&w=600&auto=format&fit=crop', // Ảnh 1 (Mặt tiền đền lúc bình minh)
+            'https://images.unsplash.com/photo-1610443224329-3733230b769f?q=80&w=600&auto=format&fit=crop'  // Ảnh 2 (Chi tiết điêu khắc)
+        ]
     },
     {
         type: 'country',
-        name: 'Nhật Bản',
-        description: 'Sự kết hợp hoàn hảo giữa truyền thống và công nghệ hiện đại.',
-        images: ['https://aloha.edu.vn/wp-content/uploads/2023/10/co-cau-nen-kinh-te-nhat-ban-3.jpg', 'https://ik.imagekit.io/tvlk/blog/2023/03/van-hoa-nhat-ban-5.jpg?tr=dpr-2,w-675']
+        name: 'Nhật Bản - Xứ sở Hoa anh đào',
+        description: 'Sự kết hợp hoàn hảo giữa truyền thống lâu đời và công nghệ hiện đại. Từ những ngôi đền cổ kính ở Kyoto đến nhịp sống hối hả ở Tokyo, Nhật Bản mang đến cho du khách những trải nghiệm đa dạng và sâu sắc.',
+        // CẬP NHẬT ĐƯỜNG DẪN ẢNH THỰC TẾ
+        images: [
+            'https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=600&auto=format&fit=crop', // Ảnh 1 (Núi Phú Sĩ)
+            'https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?q=80&w=600&auto=format&fit=crop'  // Ảnh 2 (Một góc phố Kyoto)
+        ]
     }
 ];
 
+// Hàm searchDestination() giữ nguyên như trước
 function searchDestination() {
     const input = document.getElementById('destinationInput').value.toLowerCase();
     const resultArea = document.getElementById('recommendation-results');
@@ -41,6 +56,6 @@ function searchDestination() {
             resultArea.innerHTML += card;
         });
     } else {
-        resultArea.innerHTML = '<p>Không tìm thấy kết quả phù hợp. Hãy thử "beach" hoặc "temple".</p>';
+        resultArea.innerHTML = '<p class="error-msg">Không tìm thấy kết quả phù hợp. Hãy thử "beach", "temple" hoặc "Japan".</p>';
     }
 }
